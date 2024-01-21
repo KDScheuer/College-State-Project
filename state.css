@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html {
+    scroll-behavior: smooth;
+    font-family: 'Times New Roman', Times, serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/* Banner and Nav Bar */
+header {
+    display: unset;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+#disclaimer {
+    background-color: red;
+    color: white;
+    border-bottom: 5px solid black;
+    padding: 2px;
+    padding-bottom: 10px;
+}
+.nav-bar {
+    background-color: orange;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.nav-bar ul {
+    white-space: nowrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5px;
+}
+.nav-bar li {
+    width: 20%;
+    display: inline-block;
+}
+/* Welcome Text and Image */
+.main  {
+    background-image: url('./Assests/Main_Page_Image.jpg');
+    background-size: cover;
+    height: 90vh;
+    font-size: 50px;
+    margin-bottom: 4px;
+}
+.welcome-text {
+    position: absolute;
+    display: inline;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, .7);
+    padding: 50px;
+    text-align: center;
+    font-size: 100px;
+    top: 50px;
+    left: 50px;
+    color: white;
+    border-radius: 200px;
+}
+.welcome-text span {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.button {
+    left: 250px;
+    width: 350px;
+    display: inline;
+    text-align: center;
+    background-color: orange;
+    border: 5px solid white;
+    border-radius: 50px;
+    padding: 0 10px 0 10px;
+}
+.button1 {
+    position: absolute;
+    top: 500px;
+}
+.button2 {
+    position: absolute;
+    top: 600px;
+}
+/* State Info */
+.state-info {
+    margin: 0 auto;
+    max-width: 80vw;
+    margin-bottom: 800px;
+    margin-top: 150px;
+}
+/* Article Styles */
+.state-info article {
+    max-width: 700px;
+    margin-right: 20px;
+    float: left;
+}
+.state-info h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.state-info p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+.state-info table {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+.state-info th, .state-info td {
+    border: 1px solid black;
+}
+/* Aside Styles */
+.state-info aside {
+    display: block;
+    text-align: center;
+    max-width: 400px;
+    margin-left: 20px;
+    float: right;
+    clear: right;
+}
+.state-info p {
+    margin: 0 auto;
+}
+.state-info aside img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+.state-info span {
+    font-weight: bold;
+}
+.state-info aside ol {
+    max-width: 20%;
+    font-size: 20px;
+    margin: 0 auto;
+}
+.section-seperation {
+    border-bottom: 10px double orange;
+    z-index: 1;
+}
+/* Explore Styles */
+.cities h2 {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.explore {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.image-container {
+    text-align: center;
+    border: 6px solid black;
+    padding: 30px;
+    border-radius: 75px;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+.image-container img {
+    width: 300px; 
+    height: 200px; 
+    border-radius: 50px;
+    object-fit: cover; 
+}
+/* Form Styles */
+.form {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+.form div {
+    text-align:center;
+    margin: 10px;
+}
+.form .textfield {
+    font-size: 25px;
+    border: 1px solid black;
+    background-color: lightgoldenrodyellow;
+}
+.form textarea {
+    width: 80%;
+    border: 1px solid black;
+    background-color: lightgoldenrodyellow;
+    font-size: 20px;
+}
+.submit {
+    font-size: 40px;
+    border: 5px solid black;
+    background-color: orange;
+    padding: 0 10px 0 10px;
+    border-radius: 50px;
+}
+footer {
+    background-color: orange;
+    height: 30px;
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+    padding-top: 5px;
+}
+
+.nav-bar li:hover, .button:hover, .image-container:hover, .submit:hover{
+    background-color: lightgoldenrodyellow;
+    color:black;
+    cursor: pointer;
+} 
+.button:hover {
+    border: 5px solid black;
+}
+.image-container:hover {
+    margin-top: -5px;
+}
