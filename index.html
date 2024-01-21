@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Idaho</title>
+        <link rel="stylesheet" href="state.css">
+    </head>
+    <body>
+        <header>
+            <p id="disclaimer">Created for WGU's Front-End Web Development - D277 Course</p>
+            <nav class="nav-bar">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="boise.html"><li>Boise</li></a>
+                    <a href="IdahoFalls.html"><li>Idaho Falls</li></a>
+                    <a href="Pocatello.html"><li>Pocatello</li></a>
+                    <a href="sources.html"><li>Sources</li></a>
+                </ul>
+            </nav>
+        </header>
+        <section class="main">
+            <p class="welcome-text"><span>Idaho</span><br>The Potato State</p>
+            <a href="#form"><p class="button button1">Get Information</p></a>
+            <a href="https://www.idaho.gov/" target="_blank"><p class="button button2">State Website</p></a>
+        </section>
+        <div class="section-seperation"></div>
+        <section class="state-info">
+            <article>
+                <h2>About Idaho</h2>
+                <p>Idaho is in the Pacific Northwest of the United States of America. It has a rich history with “Manifest Destiny” and the United States Expansion 
+                    into the west. It is an extremely scenic state with multiple mountains, river, lakes, and fields. This along with its abundance of natural resources 
+                    is why Idaho is often referred to as the “gem state”. This also is why Idaho is home to numerous national parks including Yellowstone National Park 
+                    which it shares with Wyoming and Montana, Craters of the Moon National Monument, and the Hagerman Fossil Beds National Monument. All these natural 
+                    landmarks and features make Idaho outdoor recreational community on of the best in the nation with activities such as whitewater rafting, fishing, skiing, 
+                    and snowboarding. In fact in the state is such a good location for outdoor recreation that in 2009 it hosted the Winter Special Olympics. </p>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Population</th>
+                        <th>Median Income</th>
+                        <th>Avg House Cost</th>
+                    </tr>
+                    <tr>
+                        <th>2020</th>
+                        <td>1,827,000</td>
+                        <td>$58,915</td>
+                        <td>$427,410</td>
+                    </tr>
+                    <tr>
+                        <th>2021</th>
+                        <td>1,904,537</td>
+                        <td>$63,377</td>
+                        <td>$432,307</td>
+                    </tr>
+                    <tr>
+                        <th>2022</th>
+                        <td>1,939,033</td>
+                        <td>$72,580</td>
+                        <td>$462,281</td>
+                    </tr>
+                </table>
+            </article>
+            <aside>
+                <img src="./Assests/State_Flag.png" alt="Idaho State Flag">
+                <p><em>Idaho State Flag</em></p>
+                <p><span>Capital:</span> Boise</p>
+                <p><span>Joined Union: </span>1890</p>
+                <p><span>Population:</span> 1,990,456</p>
+                <p><span>Timezone:</span> MST</p>
+                <p class="list-title"><span>Most Populace Citites</span></p>
+                <ol>
+                    <li>Boise</li>
+                    <li>Meridian</li>
+                    <li>Nampa</li>
+                </ol>
+            </aside>
+        </section>
+        <div class="section-seperation"></div>
+        <section class="cities">
+            <h2>Explore Some Cities</h2>
+            <div class="explore">
+                <a href="boise.html"><div class="image-container">
+                    <img src="./Assests/Boise_Main.jpg" alt="Picture of Boise">
+                    <h3>Boise</h3>
+                </div></a>
+                <a href="Pocatello.html"><div class="image-container">
+                    <img src="./Assests/Pocatello_Main.jpg" alt="Picture of Pocatello">
+                    <h3>Pocatello</h3>
+                </div></a>
+                <a href="IdahoFalls.html"><div class="image-container">
+                    <img src="./Assests/IdahoFalls_Main.jpg" alt="Picture of Idaho Falls">
+                    <h3>Idaho Falls</h3>
+                </div></a>
+            </div>
+        </section>
+        <div class="section-seperation"></div>
+        <section id="form" class="form">
+            <form action="submit-url" method="POST" onsubmit="return checkEmails()">
+                <h2>Contact Us</h2>
+                <div>
+                    <label for="first-name">First Name:</label>
+                    <input class="textfield" type="text" id="first-name" name="first-name" placeholder="Firstname" required>
+                    
+                    <label for="last-name">Last Name:</label>
+                    <input class="textfield" type="text" id="last-name" name="last-name" placeholder="Lastname" required>
+                </div>
+                <div>
+                    
+                    <label for="email">Enter Email:</label>
+                    <input class="textfield" type="email" id="email" name="email" placeholder="Example@example.com" required>
+                    
+                    <label for="email2">Reenter Email:</label>
+                    <input class="textfield" type="email" id="email2" name="email2" placeholder="Example@example.com" required>
+
+                </div>
+                <div>
+                    <textarea name="question" id="question" cols="30" 
+                    rows="10" placeholder="Enter your question or comment here..." required></textarea>
+                </div>
+                <script>
+                    function checkEmails() {
+                        var email = document.getElementById("email").value;
+                        var email2 = document.getElementById("email2").value;
+    
+                        if (email != email2) {
+                            alert("Emails do not match");
+                            return false;
+                        }
+                        return true;
+                    }
+                </script>
+                <div>
+                    <input class="submit" type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+        <footer>
+            <p>Created By Kristopher Scheuer</p>
+        </footer>
+    </body>
+</html>
